@@ -4,12 +4,12 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     title: 'Axion Helmets',
-    subtitle: 'Full Stack E-Commerce Website',
-    description: 'A responsive full stack e-commerce web application with product listings, Add to Cart, Buy Now, and user authentication.',
+    subtitle: 'Premium Safety Meets Innovation',
+    description: 'A full-stack e-commerce platform pioneering the future of rider safety with Advanced Composite Technology. Features specialized "Iron Man" and "Spiderman" editions, user authentication, and a precision-engineered shopping experience.',
     techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     liveLink: 'https://axion-ecommerce-sigma.vercel.app/',
     githubLink: 'https://github.com/devakumarb18/axion-ecommerce',
-    image: 'https://images.unsplash.com/photo-1542382257-80dedb725088?q=80&w=1000&auto=format&fit=crop', // Placeholder high-quality helmet image
+    image: 'https://images.unsplash.com/photo-1542382257-80dedb725088?q=80&w=2000&auto=format&fit=crop',
   },
 ];
 
@@ -41,13 +41,13 @@ export default function Projects() {
               className="group relative bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-emerald-500/30 transition-all duration-500"
             >
               {/* Project Image Container */}
-              <div className="aspect-video overflow-hidden border-b border-white/5 relative">
+              <div className="aspect-video overflow-hidden relative flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
+                  loading="eager"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
               </div>
 
               {/* Project Details */}
